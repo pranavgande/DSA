@@ -1,13 +1,14 @@
 # DSA
 
-Hi there! 👋
+<span style="font-size:14px">Hi there! 👋  
 This repo is my personal journey of learning and mastering Data Structures and Algorithms (DSA).  
-I’m solving problems regularly to build a strong foundation.
+I’m solving problems regularly to build a strong foundation.</span>
+
 ---
 
 ## Tech Stack
 
-- Programming Language: [C++]  
+- Programming Language: C++  
 - Tools: Git & GitHub for version control and progress tracking
 
 ---
@@ -33,5 +34,4 @@ If you want to contribute or give feedback, open an issue or a pull request!
 ---
 
 Happy coding! 🚀  
-— [Pranav Gande]
-
+— Pranav Gande
