@@ -1,7 +1,6 @@
 # DSA
 
 Hi there! 👋
-
 This repo is my personal journey of learning and mastering Data Structures and Algorithms (DSA).  
 I’m solving problems regularly to build a strong foundation.
 ---
