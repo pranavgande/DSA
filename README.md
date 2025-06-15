@@ -1,7 +1,7 @@
 # DSA
 
 <span style="font-size:14px">Hi there! 👋  
-This repo is my personal journey of learning and mastering Data Structures and Algorithms (DSA).  
+This repo is my journey of learning Data Structures and Algorithms (DSA).  
 I’m solving problems regularly to build a strong foundation.</span>
 
 ---
