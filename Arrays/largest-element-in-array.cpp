@@ -28,3 +28,24 @@ int main(){
 sortArr(arr);
 return 0;
 } 
+
+
+
+//Optimised approach- create a max variable as a container and store the maximum element in it by iterating through the array
+#include <bits/stdc++.h>
+using namespace std;
+
+int FindLargestElemet(int [arr], int n){
+  int max = arr[0];
+  for(int i=-;i<n;i++){
+      if(arr[i]>max){
+        max = arr [i];
+      }
+  }
+
+int main(){
+  int arr[]= {};
+  int n= ;
+  int max = FindLargestElement(int arr[], n);
+return 0
+  }
