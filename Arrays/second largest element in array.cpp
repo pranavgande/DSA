@@ -32,3 +32,32 @@ int main(){
 }
 
 
+//Better approach
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void GetElements(int arr[], int n){
+	int small = INT_MIN;
+	int large = INT_MAX;
+	for(int i=0;i<n;i++){
+		small = min(small, arr[i]);
+		large = max(large, arr[i]);
+	}
+	for(int i = 0;i<n;i++){
+		if(arr[i]<small && arr[i]!=small)
+			small=arr[i];
+		if(arr[i]>large && arr[i]!=small)
+			large=arr[i];
+	}
+}
+
+int main (){
+	int arr[]={};
+	int n = arr.size()/arr.size[0];
+	Getelements(arr,n);
+	return 0;
+}
+
+
+//OPTIMAL
