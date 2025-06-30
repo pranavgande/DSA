@@ -61,3 +61,9 @@ int main (){
 
 
 //OPTIMAL
+#include <bits/stdc++>
+using namespace std;
+
+void GetElement(int arr[] ,int n){
+	int small= INT_MAX;
+	int secondSmall = 
