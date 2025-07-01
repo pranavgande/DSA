@@ -23,3 +23,27 @@ int main(){
       bool ans = isSorted(arr,n);
       return 0;
 }
+
+//TC - O(N^2), SC - O(N)
+
+//Optimal:-
+#include <bits/stdc++.h>
+using namespace std;
+bool isSorted(int arr[], int n){
+      for(int i =1; i<n;i++){
+            if(arr[i]<arr[i-1]){
+                  return false;
+            }
+           return true;
+      }
+}
+
+int main(){
+      int arr[]={};
+      int n= sizeof.arr[]/sizeof.arr[0];
+      if(isSorted(int arr[], int n)){
+            cout << "Array is sorted" <<endl;
+      }
+      else cout << "Array is not sorted" << endl;
+      return 0;
+}
