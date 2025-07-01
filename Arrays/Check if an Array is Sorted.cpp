@@ -7,14 +7,19 @@ Explanation: The given array is sorted i.e Every element in the array is smaller
 
 #include <bits/stdc++.h>
 using namespace std;
-void sortedArray(int arr[], int n){
+bool isSorted(int arr[], int n){
       for (int i =0;i<n;i++){
-          if(arr[i]<arr[i+1]){
-              return true;
-          else return false;
-          }
+            for(j=i+1;j<n;j++){
+                  if(arr[i]<arr[j]){
+                        return false;
+                  }
+            }
       }
+      return true;
 }
+
 int main(){
-  int arr[] = {};
-  int n;
+      int arr[]={};
+      bool ans = isSorted(arr,n);
+      return 0;
+}
