@@ -26,3 +26,26 @@ int main(){
   int answer = FindNumber(a,N);
   return 0;
 }
+
+
+//Better approach - use hashing
+#include <bits/stdc++.h>
+using namespace std;
+
+int FindNumber(vector<int>&a, int N){
+  int hash[N+1]={0};
+
+  for(int i = 0; i< N; i++)
+    hash[a[i]]++;
+
+  for(int i = 0; i<=N; i++)
+    if(hash[a[i]]==0) return i;
+
+  return -1;
+
+int main(){
+  int arr[]={};
+  int N = ;
+  int answer = FindNumber(a,N);
+  return 0;
+}
