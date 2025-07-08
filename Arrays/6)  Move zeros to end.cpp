@@ -39,6 +39,7 @@ int main()
     return 0;
 }
 
+///brute - two pointer
           
 #include <bits/stdc++.h>
 using namespace std;
