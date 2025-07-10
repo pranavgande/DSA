@@ -23,3 +23,16 @@ int main(){
   int len = LongestSubarr(a,k);
   return 0;
 }
+
+
+//better approach - use hashing
+#include <bits/stdc++.h>
+using namespace std;
+
+int LongestSubarr(vector<int>&a, long long k){
+  int n = a.size();
+
+map<long long, int> preSumMap;
+long long sum = 0;
+int maxlen =0;
+for(int )
