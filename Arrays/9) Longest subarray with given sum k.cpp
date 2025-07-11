@@ -35,4 +35,19 @@ int LongestSubarr(vector<int>&a, long long k){
 map<long long, int> preSumMap;
 long long sum = 0;
 int maxlen =0;
-for(int )
+for(int i=0;i<n;i++)
+  sum+=a[i];
+
+if (sum==k)
+  maxlen =  max(maxlen, i+1);
+
+long long rem = sum - k;
+
+if(preSummap.find(rem)!=preSummap.end()
+  int len = i-preSummap;
+maxlen = max(maxlen, len);
+
+if (preSumMap.find(sum) == preSumMap.end()) {
+  preSumMap[sum] = i;
+    }
+}
