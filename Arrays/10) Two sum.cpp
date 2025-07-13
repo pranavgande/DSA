@@ -27,18 +27,17 @@ int main(){
 
 //better appoach using hashmap- target - arr[i]
 
-#include <bits/stdc++.h>
-using namespace std;
-
-string twoSum(int n, vector<int> &arr, int target){
-       unordered_map<int, int> mpp;
-       int num = arr[i];
-       int moreNeeded = target - num;
-       if(mpp.find(moreNeeded)!=mpp.end())
-              return(mpp[moreNeeded], i)
-       mpp[num]=i;
-return {-1,-1};
-}
+  vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> mpp; // maps value -> index
+        for (int i = 0; i < nums.size(); ++i) {
+            int num = nums[i];
+            int moreNeeded = target - num;
+            if (mpp.find(moreNeeded) != mpp.end()) {
+                return {mpp[moreNeeded], i};
+            }
+            mpp[num] = i;
+        }
+        return {-1, -1}; 
 
 //optimal- using two pointer approach, two points on two ends of an sorted array
 /*If arr[left] + arr[right] > sum, we will decrement the right pointer.
