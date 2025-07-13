@@ -39,3 +39,20 @@ string twoSum(int n, vector<int> &arr, int target){
        mpp[num]=i;
 return {-1,-1};
 }
+
+//optimal- using two pointer approach, two points on two ends of an sorted array
+/*If arr[left] + arr[right] > sum, we will decrement the right pointer.
+If arr[left] + arr[right] < sum, we will increment the left pointer.
+If arr[left] + arr[right] == sum, we will return the result.*/
+
+string twoSum(int n, vector<int> &arr, int target){
+       sort(arr.begin(), arr.end());
+       int left = 0,right = n-1;
+       while(left<right)
+              int sum  = arr[left]+arr[right];
+              if(sum==target)
+                     return YES;
+              else if(sum<target) left++;
+              else() right --;
+       return NO;
+}
