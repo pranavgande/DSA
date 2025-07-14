@@ -19,3 +19,23 @@ void SortArray(vector<int> &arr, int n){
   for(int i = cnt0;i<cnt0+cnt1; i++) arr[i]= 1;
   for(int i = cnt0+cnt1;i<cnt1+cnt2;i++) arr[i]=2; //this is replacing or manually overwriting
 }
+
+//OPTIMAL approach - The Dutch Natoinal Flag Algorithm
+
+void sortArr(vector<int>& nums){
+  int n = nums.size();
+  int low = 0;
+  int mid = 0;
+  int high = n-1;
+
+  while(mid<=high)
+    if(nums[mid]==0){
+      swap(nums[low], nums[mid]);
+      low++;
+      mid++;
+    } else if(nums[mid]==1)
+      mid++;
+}     else {
+      swap(nums[mid], nums[high])
+      high--;
+}
